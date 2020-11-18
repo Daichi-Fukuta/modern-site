@@ -1,9 +1,12 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
 /* ヘッダー
 ================================================== */
 .header__inner {
     width: 100vw;
     height: 70px;
-    border-bottom: 1px solid #000;
     color: rgb(160, 160, 160);
 }
 
@@ -70,8 +73,60 @@
 
 a.nav-btn {
     background-color: rgb(0, 110, 255);
-    padding: 15px 35px;
+    padding: 13px 36px;
     border-radius: 5px;
     color: rgb(255, 255, 255);
 }
 
+/* イントロ
+================================================== */
+.intro__inner {
+    margin-top: 200px;
+}
+
+.intro__cat {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.intro__text {
+    width: 50%;
+    position: relative;
+}
+
+.intro__text-wrap {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%);
+}
+
+.intro__title {
+    font-size: 43px;
+    font-weight: bold;
+    color: rgb(77, 77, 77);
+}
+
+.intro__sentence {
+    font-size: 20px;
+    color: rgb(77, 77, 77);
+    margin-bottom: 30px;
+}
+
+.intro-btn {
+    background-color: rgb(0, 110, 255);
+    padding: 13px 36px;
+    border-radius: 5px;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.intro__img {
+    width: 50%;
+}
+
+.intro__img-entity {
+    object-fit: cover;
+    margin: 0 auto;
+}
