@@ -8,6 +8,7 @@ body {
     width: 100vw;
     height: 70px;
     color: rgb(160, 160, 160);
+    margin: 0 auto;
 }
 
 .header__cat-1 {
@@ -15,6 +16,7 @@ body {
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
+    margin: 0 20%;
 }
 
 .header__cat-2 {
@@ -22,7 +24,6 @@ body {
     justify-content: start;
     align-items: center;
     width: 350px;
-    margin-left: 20%;
     margin-top: 10px;
 }
 
@@ -43,7 +44,6 @@ body {
 }
 
 .header-nav__right{
-    margin-right: 20%;
     margin-top: 10px;
 }
 
@@ -81,24 +81,22 @@ a.nav-btn {
 /* イントロ
 ================================================== */
 .intro__inner {
-    margin-top: 200px;
+    margin-top: 100px;
 }
 
 .intro__cat {
     display: flex;
-    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-left: 15%;
 }
 
 .intro__text {
-    width: 50%;
-    position: relative;
+    width: 45%;
 }
 
 .intro__text-wrap {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translateY(-50%);
+    margin-top: 30%;
+    margin-left: 20%;
 }
 
 .intro__title {
@@ -123,36 +121,41 @@ a.nav-btn {
 }
 
 .intro__img {
-    width: 50%;
+    width: 55%;
+    margin-right: 15%;
 }
 
 .intro__img-entity {
     object-fit: cover;
+    display: block;
     margin: 0 auto;
+    width: 100%;
+    height: 100%;
 }
 
 /* メインa
 ================================================== */
 .main-1 {
-    margin-top: 300px;
+    margin-top: 250px;
+    margin-bottom: 70px;
 }
 
 .main-1__cat {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    height: 500px;
+    margin: 0 10%;
 }
 
 .main-1__text {
     width: 35%;
-    position: relative;
     color: rgb(77, 77, 77);
 }
 
 .main-1__text-wrap {
-    position: absolute;
-    top: 30%;
-    left: 50%;
+    margin-left: 17%;
+    margin-top: 40%;
 }
 
 .main-1__title {
@@ -170,26 +173,29 @@ a.nav-btn {
 }
 
 .main-1__card {
-    width: 200px;
-    height: 320px;
-    border: 1px solid rgb(206, 206, 206);
-    box-shadow: 1px 1px 5px rgb(160, 160, 160);
+    width:320px;
+    height: 200px;
+    box-shadow: 1px 1px 5px rgb(204, 204, 204);
     border-radius: 10px;
+    overflow: hidden;
 }
 
-.main-1__card:nth-child(2) {
-    margin-left: 25px;
-    margin-top: 25px;
+.main-1__card-wrap-1 .main-1__card:nth-child(1) {
+    margin-left: 0;
+    margin-top: 0;
+}
+.main-1__card-wrap-1 .main-1__card:nth-child(2) {
+    margin-top: 15px;
 }
 
-.main-1__card:nth-child(3) {
-    margin-left: 25px;
-    margin-top: 50px;
+.main-1__card-wrap-2 .main-1__card:nth-child(1) {
+    margin-left: 15px;
+    margin-top: 60px;
 }
 
-.main-1__card:nth-child(4) {
-    margin-left: 25px;
-    margin-top: 75px;
+.main-1__card-wrap-2 .main-1__card:nth-child(2) {
+    margin-left: 15px;
+    margin-top: 15px;
 }
 
 .main-1__card:nth-child(1) > .main-1__card-img {
@@ -210,16 +216,17 @@ a.nav-btn {
 
 .main-1__card-img {
     display: block;
-    width: 50px;
-    height: 50px;
-    margin: 7px;
+    width: 30px;
+    height: 30px;
+    margin-top: 5px;
+    margin-left: 5px;
     object-fit: cover;
 }
 
 .main-1__card-title {
     display: inline-block;
     color: rgb(77, 77, 77);
-    padding: 3px 0 10px 10px;
+    padding: 3px 0 5px 10px;
     font-weight: bold;
 }
 
@@ -233,3 +240,40 @@ a.nav-btn {
 
 /* メインb
 ================================================== */
+.main-2__inner {
+    margin: 0 15%;
+}
+
+.main-2__contents {
+    display: flex;
+}
+
+.main-2__contents:nth-child(2) {
+    flex-direction: row-reverse;
+}
+
+.main-2__img {
+    /* background: blue; */
+    width: 50%;
+}
+
+.main-2__img-entity {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.main-2__text {
+    width: 50%;
+    /* background: red; */
+}
+
+.main-2__title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: rgb(77, 77, 77);
+}
+
+.main-2_sentence {
+    color: rgb(77, 77, 77);
+}
