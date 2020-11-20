@@ -16,7 +16,7 @@ body {
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    margin: 0 20%;
+    margin: 0 10%;
 }
 
 .header__cat-2 {
@@ -87,11 +87,11 @@ a.nav-btn {
 .intro__cat {
     display: flex;
     justify-content: space-between;
-    margin-left: 15%;
+    margin-left: 10%;
 }
 
 .intro__text {
-    width: 45%;
+    width: 50%;
 }
 
 .intro__text-wrap {
@@ -121,7 +121,7 @@ a.nav-btn {
 }
 
 .intro__img {
-    width: 55%;
+    width: 50%;
     margin-right: 15%;
 }
 
@@ -133,7 +133,7 @@ a.nav-btn {
     height: 100%;
 }
 
-/* メインa
+/* メイン1
 ================================================== */
 .main-1 {
     margin-top: 250px;
@@ -238,7 +238,7 @@ a.nav-btn {
     line-height: 1.2;
 }
 
-/* メインb
+/* メイン2
 ================================================== */
 .main-2__inner {
     margin: 0 15%;
@@ -253,7 +253,6 @@ a.nav-btn {
 }
 
 .main-2__img {
-    /* background: blue; */
     width: 50%;
 }
 
@@ -265,15 +264,18 @@ a.nav-btn {
 
 .main-2__text {
     width: 50%;
-    /* background: red; */
+    padding: 10% 10%;
 }
 
 .main-2__title {
     font-size: 1.5rem;
     font-weight: bold;
     color: rgb(77, 77, 77);
+    letter-spacing: .7px;
 }
 
-.main-2_sentence {
+.main-2__sentence {
+    margin-top: 30px;
     color: rgb(77, 77, 77);
+    letter-spacing: 1px;
 }
