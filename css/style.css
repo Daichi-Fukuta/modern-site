@@ -176,7 +176,7 @@ a.nav-btn {
     width:320px;
     height: 200px;
     box-shadow: 1px 1px 5px rgb(204, 204, 204);
-    border-radius: 10px;
+    border-radius: 7px;
     overflow: hidden;
 }
 
@@ -278,4 +278,85 @@ a.nav-btn {
     margin-top: 30px;
     color: rgb(77, 77, 77);
     letter-spacing: 1px;
+}
+
+/* testimonials
+================================================== */
+.testimonials__inner {
+    margin: 100px 10% 0 10%;
+    margin-bottom: 200px;
+}
+
+.testimonials__title-wrap {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.testimonials__title {
+    font-size: 2.2rem;
+    font-weight: bold;
+    color: rgb(77, 77, 77);
+}
+
+.testimonials__sub-title {
+    font-size: 1.5rem;
+    color: rgb(77, 77, 77);
+}
+
+.testimonials__contents {
+    margin: 0 auto;
+    width: 100%;
+    column-count: 4;
+    column-gap: 40px;
+}
+
+.testimonials__card {
+    width: 250px;
+    height: auto;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 1px 1px 5px rgb(204, 204, 204);
+    border-radius: 7px;
+    margin-bottom: 40px;
+    -webkit-column-break-inside: avoid;
+    page-break-inside: avoid;
+    break-inside: avoid;
+}
+
+.testimonials__sentence {
+    color: rgb(99, 99, 99);
+    letter-spacing: 1.1px;
+    line-height: 1.4;
+    padding: 25px 25px 0 25px;
+}
+
+.fa-quote-left {
+    color: rgb(77, 77, 77);
+}
+
+.testimonials__customer {
+    padding: 20px 20px 20px 25px;
+    position: relative;
+}
+
+.testimonials__customer-img {
+    width: 35px;
+    height: 35px;
+    object-fit: cover;
+}
+
+.testimonials__customer-meta {
+    position: absolute;
+    top: 48%;
+    left: 50%;
+    transform: translate(-50%, -48%);
+}
+
+.testimonials__customer-name {
+    color: rgb(77, 77, 77);
+    font-weight: bold;
+}
+
+.testimonials__customer-from {
+    color: rgb(160, 160, 160);
+    font-size: .8rem;
 }
