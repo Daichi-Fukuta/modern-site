@@ -184,7 +184,7 @@ a.nav-btn {
 
 .main-1__sentence {
     margin-top: 30px;
-    font-size: .9rem;
+    font-size: 1rem;
 }
 
 .main-1__card-list {
@@ -391,7 +391,7 @@ a.nav-btn {
 }
 
 .quote__title {
-    font-size: 1.5rem;
+    font-size: 2rem;
     font-weight: bold;
     color: rgb(77, 77, 77);
     text-align: center;
@@ -596,7 +596,7 @@ a.nav-btn {
     }
 
     .intro__title {
-        font-size: 2rem;
+        font-size: 2.2rem;
     }
 
     .intro__sentence {
@@ -638,6 +638,10 @@ a.nav-btn {
     .main-1__text-wrap {
         position: static;
         transform: translateY(0);
+    }
+
+    .main-1__title {
+        font-size: 2rem;
     }
 
     .main-1__sentence {
