@@ -9,7 +9,7 @@ a {
 /* ヘッダー
 ================================================== */
 .header__inner {
-    width: 100vw;
+    max-width: 1080px;
     height: 70px;
     color: rgb(160, 160, 160);
     margin: 0 auto;
@@ -20,7 +20,6 @@ a {
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    margin: 0 10%;
 }
 
 .header__cat-2 {
@@ -84,22 +83,25 @@ a.nav-btn {
 /* イントロ
 ================================================== */
 .intro__inner {
-    margin-top: 100px;
+    margin: 100px auto 0;
+    max-width: 1080px;
 }
 
 .intro__cat {
     display: flex;
     justify-content: space-between;
-    margin-left: 10%;
 }
 
 .intro__text {
     width: 50%;
+    position: relative;
 }
 
 .intro__text-wrap {
-    margin-top: 30%;
-    margin-left: 20%;
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    transform: translateY(-50%);
 }
 
 .intro__title {
@@ -124,7 +126,6 @@ a.nav-btn {
 
 .intro__img {
     width: 50%;
-    margin-right: 15%;
 }
 
 .intro__img-entity {
@@ -137,35 +138,37 @@ a.nav-btn {
 
 /* メイン1
 ================================================== */
-.main-1 {
-    margin-top: 250px;
-    margin-bottom: 70px;
+.main-1__inner {
+    max-width: 1080px;
+    margin: 250px auto 0;
 }
 
 .main-1__cat {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    height: 500px;
-    margin: 0 10%;
+    height: 550px;
 }
 
 .main-1__text {
     width: 35%;
     color: rgb(77, 77, 77);
+    position: relative;
 }
 
 .main-1__text-wrap {
-    margin-left: 17%;
-    margin-top: 40%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
 }
 
 .main-1__title {
-    font-size: 1.3rem;
+    font-size: 1.7rem;
     font-weight: bold;
 }
 
 .main-1__sentence {
+    margin-top: 30px;
     font-size: .9rem;
 }
 
@@ -175,11 +178,12 @@ a.nav-btn {
 }
 
 .main-1__card {
-    width:320px;
-    height: 200px;
+    width: 100%;
+    height: 40%;
     box-shadow: 1px 1px 5px rgb(204, 204, 204);
     border-radius: 7px;
     overflow: hidden;
+    padding: 10px;
 }
 
 .main-1__card-wrap-1 .main-1__card:nth-child(1) {
@@ -187,17 +191,17 @@ a.nav-btn {
     margin-top: 0;
 }
 .main-1__card-wrap-1 .main-1__card:nth-child(2) {
-    margin-top: 15px;
+    margin-top: 30px;
 }
 
 .main-1__card-wrap-2 .main-1__card:nth-child(1) {
-    margin-left: 15px;
+    margin-left: 30px;
     margin-top: 60px;
 }
 
 .main-1__card-wrap-2 .main-1__card:nth-child(2) {
-    margin-left: 15px;
-    margin-top: 15px;
+    margin-left: 30px;
+    margin-top: 30px;
 }
 
 .main-1__card:nth-child(1) > .main-1__card-img {
@@ -220,21 +224,19 @@ a.nav-btn {
     display: block;
     width: 30px;
     height: 30px;
-    margin-top: 5px;
-    margin-left: 5px;
     object-fit: cover;
 }
 
 .main-1__card-title {
     display: inline-block;
     color: rgb(77, 77, 77);
-    padding: 3px 0 5px 10px;
+    margin-top: 10px;
     font-weight: bold;
 }
 
 .main-1__card-sentence {
     display: inline-block;
-    padding: 0 10px;
+    padding-top: 6px;
     color: rgb(160, 160, 160);
     letter-spacing: 1px;
     line-height: 1.2;
@@ -243,7 +245,8 @@ a.nav-btn {
 /* メイン2
 ================================================== */
 .main-2__inner {
-    margin: 0 15%;
+    max-width: 1080px;
+    margin: 0 auto;
 }
 
 .main-2__contents {
@@ -266,7 +269,8 @@ a.nav-btn {
 
 .main-2__text {
     width: 50%;
-    padding: 10% 10%;
+    padding: 15% 2%;
+    text-align: left;
 }
 
 .main-2__title {
@@ -285,8 +289,8 @@ a.nav-btn {
 /* testimonials
 ================================================== */
 .testimonials__inner {
-    margin: 100px 10% 0 10%;
-    margin-bottom: 200px;
+    max-width: 1080px;
+    margin: 100px auto 0;
 }
 
 .testimonials__title-wrap {
@@ -368,6 +372,7 @@ a.nav-btn {
 .quote__inner {
     background-color: rgb(250, 250, 250);
     padding: 40px 0;
+    margin-top: 100px;
 }
 
 .quote__title {
