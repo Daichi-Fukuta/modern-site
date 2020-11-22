@@ -2,6 +2,10 @@ body {
     font-family: 'Montserrat', sans-serif;
 }
 
+a {
+    text-decoration: none;
+}
+
 /* ヘッダー
 ================================================== */
 .header__inner {
@@ -67,7 +71,6 @@ body {
 }
 
 .header a{
-    text-decoration: none;
     color: rgb(160, 160, 160);
 }
 
@@ -116,7 +119,6 @@ a.nav-btn {
     padding: 13px 36px;
     border-radius: 5px;
     color: rgb(255, 255, 255);
-    text-decoration: none;
     font-size: .9rem;
 }
 
@@ -416,5 +418,66 @@ a.nav-btn {
     padding: 13px 36px;
     border-radius: 5px;
     color: rgb(255, 255, 255);
-    text-decoration: none;
+}
+
+/* footer
+================================================== */
+.footer__inner {
+    margin-top: 100px;
+    background-color: rgb(250, 250, 250);
+    padding: 50px 100px 30px;
+}
+
+.footer__cat {
+    display: flex;
+}
+
+.footer__cat1 {
+    width: 20%;
+}
+
+.footer__title {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: rgb(77, 77, 77);
+}
+
+.footer__cat1 .footer__title {
+    font-size: 1.7rem;
+}
+
+.footer__text {
+    margin-top: 20px;
+    letter-spacing: .7px;
+    color: rgb(121, 121, 121);
+}
+
+.footer__socials {
+    margin-top: 20px;
+}
+
+.footer__socials-icon {
+    color: rgb(77, 77, 77);
+    padding-right: 10px;
+    font-size: 24px;
+}
+
+.footer__column {
+    margin-left: 8%;
+}
+
+.footer__menu {
+    margin-top: 20px;
+}
+
+.footer__menu-item {
+    color: rgb(121, 121, 121);
+    padding-bottom: 10px;
+}
+
+
+.copyright {
+    text-align: right;
+    margin-top: 40px;
+    color: rgb(77, 77, 77)
 }
