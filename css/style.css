@@ -80,6 +80,21 @@ a.nav-btn {
     color: rgb(255, 255, 255);
 }
 
+.hamburger-input {
+    display: none;
+    opacity: 0;
+}
+
+.hamburger-label {
+    display: none;
+    opacity: 0;
+}
+
+.res-header-nav {
+    display: none;
+    opacity: 0;
+}
+
 /* イントロ
 ================================================== */
 .intro__inner {
@@ -485,4 +500,235 @@ a.nav-btn {
     text-align: right;
     margin-top: 40px;
     color: rgb(77, 77, 77)
+}
+
+/* レスポンシブ
+================================================== */
+@media screen and (max-width: 768px) {
+    /* ヘッダー
+    ================================================== */
+    .header__inner {
+        position: relative;
+        width: 100vw;
+        height: 85px;
+    }
+
+    .header-logo {
+        margin: 5px 0 0 10px;
+    }
+
+    .header-nav__left,
+    .header-nav__right{
+        display: none;
+        opacity: 0;
+    }
+
+    a.nav-btn {
+        display: inline-block;
+        width: 100%;
+        padding: 13px 0;
+    }
+
+    .hamburger-label{
+        display: inline-block;
+        opacity: 1; 
+        position: absolute;
+        right: 0;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+    .hamburger-icon ion-icon {
+        padding-right: 25px;
+        font-size: 32px;
+    }
+
+    .res-header-nav__item {
+        text-align: center;
+        padding: 15px;
+    }
+
+    .menu-close {
+        display: none;
+    }
+
+    .hamburger-input:checked + label .hamburger-icon .menu-open {
+        display: none;
+    }
+
+    .hamburger-input:checked + label .hamburger-icon .menu-close {
+        display: block;
+    }
+
+    .hamburger-input:checked ~ .res-header-nav {
+        display: block;
+        position: absolute;
+        top: 85px;
+        width: 100vw;
+        height: auto;
+        opacity: 1;
+        background-color: rgb(250, 250, 250);
+        z-index: 2;
+    }
+
+    /* イントロ
+    ================================================== */
+    .intro__inner {
+        width: 90vw;
+        max-width: 768px;
+        margin: 20px auto 0;
+        z-index: 1;
+    }
+
+    .intro__cat {
+        display: block;
+    }
+
+    .intro__text {
+        width: 100%;
+        position: static;
+        text-align: center;
+    }
+
+    .intro__text-wrap {
+        position: static;
+        transform: translateY(0);
+    }
+
+    .intro__title {
+        font-size: 2rem;
+    }
+
+    .intro__sentence {
+        font-size: 1rem;
+        margin-top: 15px;
+    }
+
+    .intro-btn {
+        padding: 13px 25px;
+    }
+
+    .intro__img {
+        width: 100%;
+    }
+
+    .intro__img-entity {
+        object-fit: cover;
+        height: 50vh;
+    }
+
+    /* メイン1
+    ================================================= */
+    .main-1__inner {
+        max-width: 768px;
+        margin: 50px auto 0;
+        width: 90vw;
+    }
+
+    .main-1__cat {
+        display: block;
+        height: auto;
+    }
+
+    .main-1__text {
+        width: 100%;
+        position: static;
+    }
+
+    .main-1__text-wrap {
+        position: static;
+        transform: translateY(0);
+    }
+
+    .main-1__sentence {
+        margin: 10px 0 30px;
+    }
+
+    .main-1__card-list {
+        display: block;
+        width: 100%;
+    }
+
+    .main-1__card {
+        width: 100%;
+        height: 40%;
+        box-shadow: 1px 1px 5px rgb(204, 204, 204);
+        border-radius: 7px;
+        overflow: hidden;
+        padding: 10px;
+    }
+
+    .main-1__card-wrap-2 .main-1__card:nth-child(1) {
+        margin-left: 0;
+        margin-top: 30px;
+    }
+
+    .main-1__card-wrap-2 .main-1__card:nth-child(2) {
+        margin-left: 0;
+    }
+
+    .main-1__card-img {
+        display: block;
+        width: 30px;
+        height: 30px;
+        object-fit: cover;
+    }
+
+    .main-1__card-title {
+        display: inline-block;
+        color: rgb(77, 77, 77);
+        margin-top: 10px;
+        font-weight: bold;
+    }
+
+    .main-1__card-sentence {
+        display: inline-block;
+        padding-top: 6px;
+        color: rgb(160, 160, 160);
+        letter-spacing: 1px;
+        line-height: 1.2;
+    }
+
+    /* メイン2
+    ================================================== */
+    .main-2__inner {
+        width: 90vw;
+        max-width: 768px;
+        margin: 50px auto 0;
+    }
+
+    .main-2__contents {
+        display: block;
+    }
+
+
+    .main-2__img {
+        width: 100%;
+    }
+
+    .main-2__text {
+        width: 100%;
+    }
+
+    .main-2__sentence {
+        margin-top: 10px;
+    }
+
+    /* testimonials
+    ================================================== */
+    .testimonials__inner {
+        display: none;
+    }
+
+    /* quote
+    ================================================== */
+    .quote {
+        display: none;
+    }
+
+    /* フッター
+    ================================================== */
+    .footer {
+        display: none;
+    }
 }
